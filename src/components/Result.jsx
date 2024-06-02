@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
+import { Rnd } from "react-rnd";
 
-function Register({srcCode}) {
+function Result({ srcCode }) {
   return (
     <div>
-      <div className="bg-[#282c34] p-4 shadow mt-4 rounded-lg">
-        <h2 className="text-lg font-semibold mb-2 text-white">Result</h2>
+      <div className="bg-[#282c34] p-1 shadow mt-3 rounded-sm ">
+        <h2 className="text-lg font-semibold mb-2 pl-2 text-white">Result</h2>
+
         <iframe
-          className="w-full h-60 border border-gray-700 rounded-md"
+          className="w-full h-72 border border-gray-700 rounded-sm"
           srcDoc={srcCode}
           title="output"
           sandbox="allow-scripts"
@@ -18,4 +20,4 @@ function Register({srcCode}) {
   );
 }
 
-export default Register
+export default Result;

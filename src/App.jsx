@@ -47,36 +47,36 @@ function App() {
       {/* Components */}
       <div className="p-2">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-2">
-          <div className="bg-[#282c34] rounded-lg shadow">
-            <h2 className="text-lg font-semibold mb-2 text-white">HTML</h2>
+          <div className="bg-[#282c34] rounded-sm shadow">
+            <h2 className="text-lg font-semibold mb-1 pl-2 text-white">HTML</h2>
             <CodeMirror
               className="text-xl border-gray-700 border"
               value={html_edit}
-              height="342px"
+              height="318px"
               theme="dark"
               extensions={[html(true)]}
               onChange={onChangeHtml}
             />
           </div>
-          <div className="bg-[#282c34] rounded-lg shadow">
-            <h2 className="text-lg font-semibold mb-2 text-white">CSS</h2>
+          <div className="bg-[#282c34] rounded-sm shadow">
+            <h2 className="text-lg font-semibold mb-1 pl-2 text-white">CSS</h2>
             <CodeMirror
               className="text-xl border-gray-700 border"
               value={css_edit}
-              height="342px"
+              height="318px"
               theme="dark"
               extensions={[css(true)]}
               onChange={onChangeCss}
             />
           </div>
-          <div className="bg-[#282c34] rounded-lg shadow">
-            <h2 className="text-lg font-semibold mb-2 text-white">
-              JavaScript
+          <div className="bg-[#282c34] rounded-sm shadow">
+            <h2 className="text-lg font-semibold mb-1 pl-2 text-white">
+              Javascript
             </h2>
             <CodeMirror
               className="text-xl border-gray-700 border"
               value={js_edit}
-              height="342px"
+              height="318px"
               theme="dark"
               extensions={[javascript(true)]}
               onChange={onChangeJavaScript}
